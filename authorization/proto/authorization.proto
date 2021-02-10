@@ -1,0 +1,110 @@
+syntax = "proto3";
+
+package authorization;
+option go_package = "authorization/proto";
+
+import "google/protobuf/timestamp.proto";
+
+message Subject {
+    enum SubjectType {
+        USER = 0;
+        GROUP = 1;
+        PROCESS = 2;
+    }
+    SubjectType type = 1;
+    string identifiant = 2;
+}
+
+message Resource {
+    string type = 1;
+    string identifiant = 2;
+}
+
+message Capability {
+    enum CapabilityType {
+        CREATE = 0;
+        READ = 1;
+        UPDATE = 2;
+        DELETE = 3;
+        ADMIN = 4;
+    }
+    CapabilityType type = 1;
+}
+
+message Effect {
+    enum EffectType {
+        ALLOW = 0;
+        DENY = 1;
+    }
+    EffectType effect_type = 1;
+}
+
+message Authorization {
+    string identifiant = 1;
+    string scope = 2;
+    repeated Subject subjects = 3;
+    repeated Resource resources = 4;
+    repeated Capability capabilities = 5;
+    Effect effect = 6;
+    google.protobuf.Timestamp start_time = 7;
+    google.protobuf.Timestamp end_time = 8;
+}
+
+message CreateAuthorizationRequest {
+    Authorization authorization = 1;
+}
+
+message CreateAuthorizationResponse {
+    string result = 1;
+}
+
+// message ReadAuthorizationBySubjectIdRequest {
+
+// }
+
+// message ReadAuthorizationBySubjectIdResponse {
+    
+// }
+
+// message ReadAuthorizationByResourceIdRequest {
+
+// }
+
+// message ReadAuthorizationByResourceIdResponse {
+    
+// }
+
+// message UpdateAuthorizationRequest {
+
+// }
+
+// message UpdateAuthorizationResponse {
+    
+// }
+
+// message DeleteAuthorizationRequest {
+
+// }
+
+// message DeleteAuthorizationResponse {
+    
+// }
+
+service AuthorizationService{
+
+    // BiDi Streaming
+    rpc CreateAuthorization(stream CreateAuthorizationRequest) returns (stream CreateAuthorizationResponse) {};
+
+    // BiDi Streaming
+    // rpc ReadAuthorizationBySubjectId(stream ReadAuthorizationBySubjectIdRequest) returns (stream ReadAuthorizationBySubjectIdResponse) {};
+
+    // // BiDi Streaming
+    // rpc ReadAuthorizationByResourceId(stream ReadAuthorizationByResourceIdRequest) returns (stream ReadAuthorizationByResourceIdResponse) {};
+
+    // // BiDi Streaming
+    // rpc UpdateAuthorization(stream UpdateAuthorizationRequest) returns (stream UpdateAuthorizationResponse) {};
+
+    // // BiDi Streaming
+    // rpc DeleteAuthorization(stream DeleteAuthorizationRequest) returns (stream DeleteAuthorizationResponse) {};
+
+}
