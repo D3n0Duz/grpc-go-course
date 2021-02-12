@@ -649,18 +649,17 @@ var file_authorization_proto_authorization_proto_rawDesc = []byte{
 	0x6e, 0x22, 0x35, 0x0a, 0x1b, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x41, 0x75, 0x74, 0x68, 0x6f,
 	0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65,
 	0x12, 0x16, 0x0a, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x18, 0x01, 0x20, 0x01, 0x28, 0x09,
-	0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0x8a, 0x01, 0x0a, 0x14, 0x41, 0x75, 0x74,
+	0x52, 0x06, 0x72, 0x65, 0x73, 0x75, 0x6c, 0x74, 0x32, 0x80, 0x01, 0x0a, 0x14, 0x41, 0x75, 0x74,
 	0x68, 0x6f, 0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63,
-	0x65, 0x12, 0x72, 0x0a, 0x13, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x41, 0x75, 0x74, 0x68, 0x6f,
-	0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x12, 0x29, 0x2e, 0x61, 0x75, 0x74, 0x68, 0x6f,
-	0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2e, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x41,
-	0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75,
-	0x65, 0x73, 0x74, 0x1a, 0x2a, 0x2e, 0x61, 0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x7a, 0x61, 0x74,
-	0x69, 0x6f, 0x6e, 0x2e, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65, 0x41, 0x75, 0x74, 0x68, 0x6f, 0x72,
-	0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22,
-	0x00, 0x28, 0x01, 0x30, 0x01, 0x42, 0x15, 0x5a, 0x13, 0x61, 0x75, 0x74, 0x68, 0x6f, 0x72, 0x69,
-	0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2f, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x62, 0x06, 0x70, 0x72,
-	0x6f, 0x74, 0x6f, 0x33,
+	0x65, 0x12, 0x68, 0x0a, 0x09, 0x41, 0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x7a, 0x65, 0x12, 0x29,
+	0x2e, 0x61, 0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2e, 0x43,
+	0x72, 0x65, 0x61, 0x74, 0x65, 0x41, 0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x7a, 0x61, 0x74, 0x69,
+	0x6f, 0x6e, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x2a, 0x2e, 0x61, 0x75, 0x74, 0x68,
+	0x6f, 0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2e, 0x43, 0x72, 0x65, 0x61, 0x74, 0x65,
+	0x41, 0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x52, 0x65, 0x73,
+	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x28, 0x01, 0x30, 0x01, 0x42, 0x15, 0x5a, 0x13, 0x61,
+	0x75, 0x74, 0x68, 0x6f, 0x72, 0x69, 0x7a, 0x61, 0x74, 0x69, 0x6f, 0x6e, 0x2f, 0x70, 0x72, 0x6f,
+	0x74, 0x6f, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -701,8 +700,8 @@ var file_authorization_proto_authorization_proto_depIdxs = []int32{
 	10, // 7: authorization.Authorization.start_time:type_name -> google.protobuf.Timestamp
 	10, // 8: authorization.Authorization.end_time:type_name -> google.protobuf.Timestamp
 	7,  // 9: authorization.CreateAuthorizationRequest.authorization:type_name -> authorization.Authorization
-	8,  // 10: authorization.AuthorizationService.CreateAuthorization:input_type -> authorization.CreateAuthorizationRequest
-	9,  // 11: authorization.AuthorizationService.CreateAuthorization:output_type -> authorization.CreateAuthorizationResponse
+	8,  // 10: authorization.AuthorizationService.Authorize:input_type -> authorization.CreateAuthorizationRequest
+	9,  // 11: authorization.AuthorizationService.Authorize:output_type -> authorization.CreateAuthorizationResponse
 	11, // [11:12] is the sub-list for method output_type
 	10, // [10:11] is the sub-list for method input_type
 	10, // [10:10] is the sub-list for extension type_name
@@ -835,7 +834,7 @@ const _ = grpc.SupportPackageIsVersion6
 // For semantics around ctx use and closing/ending streaming RPCs, please refer to https://godoc.org/google.golang.org/grpc#ClientConn.NewStream.
 type AuthorizationServiceClient interface {
 	// BiDi Streaming
-	CreateAuthorization(ctx context.Context, opts ...grpc.CallOption) (AuthorizationService_CreateAuthorizationClient, error)
+	Authorize(ctx context.Context, opts ...grpc.CallOption) (AuthorizationService_AuthorizeClient, error)
 }
 
 type authorizationServiceClient struct {
@@ -846,30 +845,30 @@ func NewAuthorizationServiceClient(cc grpc.ClientConnInterface) AuthorizationSer
 	return &authorizationServiceClient{cc}
 }
 
-func (c *authorizationServiceClient) CreateAuthorization(ctx context.Context, opts ...grpc.CallOption) (AuthorizationService_CreateAuthorizationClient, error) {
-	stream, err := c.cc.NewStream(ctx, &_AuthorizationService_serviceDesc.Streams[0], "/authorization.AuthorizationService/CreateAuthorization", opts...)
+func (c *authorizationServiceClient) Authorize(ctx context.Context, opts ...grpc.CallOption) (AuthorizationService_AuthorizeClient, error) {
+	stream, err := c.cc.NewStream(ctx, &_AuthorizationService_serviceDesc.Streams[0], "/authorization.AuthorizationService/Authorize", opts...)
 	if err != nil {
 		return nil, err
 	}
-	x := &authorizationServiceCreateAuthorizationClient{stream}
+	x := &authorizationServiceAuthorizeClient{stream}
 	return x, nil
 }
 
-type AuthorizationService_CreateAuthorizationClient interface {
+type AuthorizationService_AuthorizeClient interface {
 	Send(*CreateAuthorizationRequest) error
 	Recv() (*CreateAuthorizationResponse, error)
 	grpc.ClientStream
 }
 
-type authorizationServiceCreateAuthorizationClient struct {
+type authorizationServiceAuthorizeClient struct {
 	grpc.ClientStream
 }
 
-func (x *authorizationServiceCreateAuthorizationClient) Send(m *CreateAuthorizationRequest) error {
+func (x *authorizationServiceAuthorizeClient) Send(m *CreateAuthorizationRequest) error {
 	return x.ClientStream.SendMsg(m)
 }
 
-func (x *authorizationServiceCreateAuthorizationClient) Recv() (*CreateAuthorizationResponse, error) {
+func (x *authorizationServiceAuthorizeClient) Recv() (*CreateAuthorizationResponse, error) {
 	m := new(CreateAuthorizationResponse)
 	if err := x.ClientStream.RecvMsg(m); err != nil {
 		return nil, err
@@ -880,40 +879,40 @@ func (x *authorizationServiceCreateAuthorizationClient) Recv() (*CreateAuthoriza
 // AuthorizationServiceServer is the server API for AuthorizationService service.
 type AuthorizationServiceServer interface {
 	// BiDi Streaming
-	CreateAuthorization(AuthorizationService_CreateAuthorizationServer) error
+	Authorize(AuthorizationService_AuthorizeServer) error
 }
 
 // UnimplementedAuthorizationServiceServer can be embedded to have forward compatible implementations.
 type UnimplementedAuthorizationServiceServer struct {
 }
 
-func (*UnimplementedAuthorizationServiceServer) CreateAuthorization(AuthorizationService_CreateAuthorizationServer) error {
-	return status.Errorf(codes.Unimplemented, "method CreateAuthorization not implemented")
+func (*UnimplementedAuthorizationServiceServer) Authorize(AuthorizationService_AuthorizeServer) error {
+	return status.Errorf(codes.Unimplemented, "method Authorize not implemented")
 }
 
 func RegisterAuthorizationServiceServer(s *grpc.Server, srv AuthorizationServiceServer) {
 	s.RegisterService(&_AuthorizationService_serviceDesc, srv)
 }
 
-func _AuthorizationService_CreateAuthorization_Handler(srv interface{}, stream grpc.ServerStream) error {
-	return srv.(AuthorizationServiceServer).CreateAuthorization(&authorizationServiceCreateAuthorizationServer{stream})
+func _AuthorizationService_Authorize_Handler(srv interface{}, stream grpc.ServerStream) error {
+	return srv.(AuthorizationServiceServer).Authorize(&authorizationServiceAuthorizeServer{stream})
 }
 
-type AuthorizationService_CreateAuthorizationServer interface {
+type AuthorizationService_AuthorizeServer interface {
 	Send(*CreateAuthorizationResponse) error
 	Recv() (*CreateAuthorizationRequest, error)
 	grpc.ServerStream
 }
 
-type authorizationServiceCreateAuthorizationServer struct {
+type authorizationServiceAuthorizeServer struct {
 	grpc.ServerStream
 }
 
-func (x *authorizationServiceCreateAuthorizationServer) Send(m *CreateAuthorizationResponse) error {
+func (x *authorizationServiceAuthorizeServer) Send(m *CreateAuthorizationResponse) error {
 	return x.ServerStream.SendMsg(m)
 }
 
-func (x *authorizationServiceCreateAuthorizationServer) Recv() (*CreateAuthorizationRequest, error) {
+func (x *authorizationServiceAuthorizeServer) Recv() (*CreateAuthorizationRequest, error) {
 	m := new(CreateAuthorizationRequest)
 	if err := x.ServerStream.RecvMsg(m); err != nil {
 		return nil, err
@@ -927,8 +926,8 @@ var _AuthorizationService_serviceDesc = grpc.ServiceDesc{
 	Methods:     []grpc.MethodDesc{},
 	Streams: []grpc.StreamDesc{
 		{
-			StreamName:    "CreateAuthorization",
-			Handler:       _AuthorizationService_CreateAuthorization_Handler,
+			StreamName:    "Authorize",
+			Handler:       _AuthorizationService_Authorize_Handler,
 			ServerStreams: true,
 			ClientStreams: true,
 		},

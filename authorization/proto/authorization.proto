@@ -93,7 +93,7 @@ message CreateAuthorizationResponse {
 service AuthorizationService{
 
     // BiDi Streaming
-    rpc CreateAuthorization(stream CreateAuthorizationRequest) returns (stream CreateAuthorizationResponse) {};
+    rpc Authorize (stream CreateAuthorizationRequest) returns (stream CreateAuthorizationResponse) {};
 
     // BiDi Streaming
     // rpc ReadAuthorizationBySubjectId(stream ReadAuthorizationBySubjectIdRequest) returns (stream ReadAuthorizationBySubjectIdResponse) {};

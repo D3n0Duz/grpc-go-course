@@ -11,6 +11,12 @@ export PATH=$PATH:$GOROOT:$GOPATH:$GOBIN
 protoc greet/greetpb/greet.proto --go_out=plugins=grpc:.
 protoc calculator/calculatorpb/calculator.proto --go_out=plugins=grpc:.
 protoc blog/blogpb/blog.proto --go_out=plugins=grpc:.
-
 protoc authorization/proto/authorization.proto --go_out=plugins=grpc:.
 protoc chat/proto/chat.proto --go_out=plugins=grpc:.
+
+
+# flutter client
+pub global activate protoc_plugin
+export PATH="$PATH:$HOME/.pub-cache/bin"
+protoc chat/proto/chat.proto --dart_out=grpc:.
+protoc chat/proto/chat.proto --dart_out=grpc:chat/client/lib/src/generated
